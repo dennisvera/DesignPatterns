@@ -44,6 +44,8 @@
 		42F84AB61E6950280029C1E6 /* HomeProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F84AB51E6950280029C1E6 /* HomeProductsViewController.swift */; };
 		42F84AB81E6950350029C1E6 /* BusinessProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F84AB71E6950350029C1E6 /* BusinessProductsViewController.swift */; };
 		42F84ABF1E6953120029C1E6 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F84ABE1E6953120029C1E6 /* ProductCollectionViewCell.swift */; };
+		E131D58F1F116BD7005402D5 /* CleaningServicesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E131D58E1F116BD7005402D5 /* CleaningServicesBuilder.swift */; };
+		E131D5911F117028005402D5 /* HomeInfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E131D5901F117028005402D5 /* HomeInfoBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +89,8 @@
 		42F84AB51E6950280029C1E6 /* HomeProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProductsViewController.swift; sourceTree = "<group>"; };
 		42F84AB71E6950350029C1E6 /* BusinessProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessProductsViewController.swift; sourceTree = "<group>"; };
 		42F84ABE1E6953120029C1E6 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		E131D58E1F116BD7005402D5 /* CleaningServicesBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleaningServicesBuilder.swift; sourceTree = "<group>"; };
+		E131D5901F117028005402D5 /* HomeInfoBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInfoBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,10 @@
 			isa = PBXGroup;
 			children = (
 				422FEA731E67608200AFDC41 /* App */,
+				E131D5811F116621005402D5 /* Cleaning Services */,
+				E131D5831F116635005402D5 /* Home Info */,
+				E131D5841F11664A005402D5 /* Theme */,
+				E131D5821F11662B005402D5 /* Welcome */,
 			);
 			path = RWClean;
 			sourceTree = "<group>";
@@ -158,9 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				422FEA631E675E8800AFDC41 /* Assets.xcassets */,
-				4287669E1E693415001D72E5 /* CleaningServices.xcassets */,
-				422FEA801E6767B000AFDC41 /* HomeInfoBuilder.xcassets */,
-				422FEA781E6766FB00AFDC41 /* Welcome.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -168,18 +173,8 @@
 		422FEA761E6766C300AFDC41 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				428766A51E6934C9001D72E5 /* CleaningServices.storyboard */,
-				42F162BF1E6C382C00B90E22 /* CollectionViewCenterFlowLayout.swift */,
-				422FEA841E67683500AFDC41 /* HomeInfoBuilder.storyboard */,
 				422FEA651E675E8800AFDC41 /* LaunchScreen.storyboard */,
-				429ECFBB1E744DA3000E6A8C /* LoadingHUD.swift */,
-				429ECFBC1E744DA3000E6A8C /* LoadingHUD.xib */,
 				42F164D91E6C48D600B90E22 /* Main.storyboard */,
-				4276FCB41EB3E629004E96B9 /* ParentPushSegue.swift */,
-				42F84ABE1E6953120029C1E6 /* ProductCollectionViewCell.swift */,
-				4276FCB51EB3E629004E96B9 /* SetNavigationRootSegue.swift */,
-				429ECFBF1E744DB9000E6A8C /* UIViewController+LoadingHUD.swift */,
-				422FEA601E675E8800AFDC41 /* Welcome.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -204,7 +199,7 @@
 			name = RoomCountViewControllers;
 			sourceTree = "<group>";
 		};
-		42C0F5D21EB7AE8800C6EBAB /* Cleaning Services */ = {
+		42C0F5D21EB7AE8800C6EBAB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				42F84AB71E6950350029C1E6 /* BusinessProductsViewController.swift */,
@@ -212,15 +207,12 @@
 				42F84AB51E6950280029C1E6 /* HomeProductsViewController.swift */,
 				42F164E01E6C55C200B90E22 /* ProductDetailsViewController.swift */,
 			);
-			name = "Cleaning Services";
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		42F164DB1E6C492900B90E22 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				42C0F5D21EB7AE8800C6EBAB /* Cleaning Services */,
-				42F860161E6F20E50078A995 /* Home Info */,
-				42F860171E6F21260078A995 /* Welcome */,
 				42F164DE1E6C494400B90E22 /* MenuTableViewController.swift */,
 			);
 			name = Controllers;
@@ -229,14 +221,11 @@
 		42F860151E6F20C30078A995 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				422FEA871E67687100AFDC41 /* HomeInfo.swift */,
-				421139E01E6BCB6D00A057BF /* Product.swift */,
-				421BD4281E68A887002F1F3C /* RoomSize.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
 		};
-		42F860161E6F20E50078A995 /* Home Info */ = {
+		42F860161E6F20E50078A995 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				421BD4251E68A3A8002F1F3C /* Base */,
@@ -246,16 +235,137 @@
 				421BD42A1E68C98B002F1F3C /* ReviewHomeInfoViewController.swift */,
 				4276FCB21EB3E1DE004E96B9 /* StartHomeInfoViewController.swift */,
 			);
-			name = "Home Info";
+			name = Controllers;
 			sourceTree = "<group>";
 		};
-		42F860171E6F21260078A995 /* Welcome */ = {
+		42F860171E6F21260078A995 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				420B9B531E68D61000972DA3 /* WelcomePageViewController.swift */,
 				422FEA5E1E675E8800AFDC41 /* WelcomeViewController.swift */,
 			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E131D5811F116621005402D5 /* Cleaning Services */ = {
+			isa = PBXGroup;
+			children = (
+				E131D58E1F116BD7005402D5 /* CleaningServicesBuilder.swift */,
+				42C0F5D21EB7AE8800C6EBAB /* Controllers */,
+				E131D5861F116774005402D5 /* Models */,
+				E131D5891F1167DD005402D5 /* Resources */,
+				E131D58A1F116855005402D5 /* Views */,
+			);
+			name = "Cleaning Services";
+			sourceTree = "<group>";
+		};
+		E131D5821F11662B005402D5 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				42F860171E6F21260078A995 /* Controllers */,
+				E131D5871F1167C8005402D5 /* Resources */,
+				E131D58D1F1168D9005402D5 /* Views */,
+			);
 			name = Welcome;
+			sourceTree = "<group>";
+		};
+		E131D5831F116635005402D5 /* Home Info */ = {
+			isa = PBXGroup;
+			children = (
+				E131D5901F117028005402D5 /* HomeInfoBuilder.swift */,
+				42F860161E6F20E50078A995 /* Controllers */,
+				E131D5851F11672E005402D5 /* Models */,
+				E131D5881F1167D7005402D5 /* Resources */,
+				E131D58B1F116881005402D5 /* Views */,
+			);
+			name = "Home Info";
+			sourceTree = "<group>";
+		};
+		E131D5841F11664A005402D5 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				E131D58C1F1168B0005402D5 /* Views */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
+		E131D5851F11672E005402D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				422FEA871E67687100AFDC41 /* HomeInfo.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E131D5861F116774005402D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				421139E01E6BCB6D00A057BF /* Product.swift */,
+				421BD4281E68A887002F1F3C /* RoomSize.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E131D5871F1167C8005402D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				422FEA781E6766FB00AFDC41 /* Welcome.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E131D5881F1167D7005402D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				422FEA801E6767B000AFDC41 /* HomeInfoBuilder.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E131D5891F1167DD005402D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4287669E1E693415001D72E5 /* CleaningServices.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E131D58A1F116855005402D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				428766A51E6934C9001D72E5 /* CleaningServices.storyboard */,
+				42F162BF1E6C382C00B90E22 /* CollectionViewCenterFlowLayout.swift */,
+				42F84ABE1E6953120029C1E6 /* ProductCollectionViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E131D58B1F116881005402D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				422FEA841E67683500AFDC41 /* HomeInfoBuilder.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E131D58C1F1168B0005402D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				429ECFBB1E744DA3000E6A8C /* LoadingHUD.swift */,
+				429ECFBC1E744DA3000E6A8C /* LoadingHUD.xib */,
+				4276FCB41EB3E629004E96B9 /* ParentPushSegue.swift */,
+				4276FCB51EB3E629004E96B9 /* SetNavigationRootSegue.swift */,
+				429ECFBF1E744DB9000E6A8C /* UIViewController+LoadingHUD.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E131D58D1F1168D9005402D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				422FEA601E675E8800AFDC41 /* Welcome.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +400,8 @@
 				TargetAttributes = {
 					422FEA581E675E8800AFDC41 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = K24N6NL7FA;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -342,6 +453,7 @@
 				428766A41E69344E001D72E5 /* CleaningServicesTableViewController.swift in Sources */,
 				429ECFBD1E744DA3000E6A8C /* LoadingHUD.swift in Sources */,
 				42F164DF1E6C494400B90E22 /* MenuTableViewController.swift in Sources */,
+				E131D5911F117028005402D5 /* HomeInfoBuilder.swift in Sources */,
 				422FEA5F1E675E8800AFDC41 /* WelcomeViewController.swift in Sources */,
 				421BD42B1E68C98B002F1F3C /* ReviewHomeInfoViewController.swift in Sources */,
 				422FEA5D1E675E8800AFDC41 /* AppDelegate.swift in Sources */,
@@ -352,6 +464,7 @@
 				420B9B541E68D61000972DA3 /* WelcomePageViewController.swift in Sources */,
 				42F84ABF1E6953120029C1E6 /* ProductCollectionViewCell.swift in Sources */,
 				4276FCB61EB3E629004E96B9 /* ParentPushSegue.swift in Sources */,
+				E131D58F1F116BD7005402D5 /* CleaningServicesBuilder.swift in Sources */,
 				422FEA8E1E676B6200AFDC41 /* KitchenSizeViewController.swift in Sources */,
 				42F162C01E6C382C00B90E22 /* CollectionViewCenterFlowLayout.swift in Sources */,
 				422FEA881E67687100AFDC41 /* HomeInfo.swift in Sources */,
@@ -484,11 +597,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K24N6NL7FA;
 				INFOPLIST_FILE = RWClean/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.RWClean;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -497,11 +612,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K24N6NL7FA;
 				INFOPLIST_FILE = RWClean/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.RWClean;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

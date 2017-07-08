@@ -31,7 +31,7 @@
 import UIKit
 
 public protocol HomeInfoBuilderDelegate: class {
-  func homeInfoBuilderCompleted(_ homeInfo: HomeInfo)
+    func homeInfoBuilderCompleted(_ homeInfo: HomeInfo)
 }
 
 public class HomeInfoViewController: UIViewController {
